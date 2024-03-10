@@ -27,12 +27,12 @@ interface NavItemProps {
   onExpand: (id: string) => void;
 }
 
-export const NavItem = ({
+export function NavItem({
   isExpanded,
   isActive,
   organization,
   onExpand,
-}: NavItemProps) => {
+}: NavItemProps) {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -103,7 +103,7 @@ export const NavItem = ({
       </AccordionContent>
     </AccordionItem>
   );
-};
+}
 
 NavItem.Skeleton = function SkeletonNavItem() {
   return (

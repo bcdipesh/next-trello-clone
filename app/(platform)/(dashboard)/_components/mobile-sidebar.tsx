@@ -10,7 +10,7 @@ import { Sheet, SheetContent } from "@/components/ui/sheet";
 
 import { Sidebar } from "./sidebar";
 
-export const MobileSidebar = () => {
+export function MobileSidebar() {
   const pathname = usePathname();
   const [isMounted, setIsMounted] = useState(false);
 
@@ -47,4 +47,4 @@ export const MobileSidebar = () => {
       </Sheet>
     </>
   );
-};
+}
